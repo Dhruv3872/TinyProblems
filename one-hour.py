@@ -29,7 +29,7 @@
 # else:
 #     print('Invalid keyword. Please try again from the start.')
 # print(convertedWeight)
-names = ['Dhruv', 'Vivek', 'Hari']
+names = ['John', 'Maya', 'Chris']
 print(names[0])
-names.remove('Dhruv')
+names.remove('Chris')
 print(names)
