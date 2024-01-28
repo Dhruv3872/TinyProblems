@@ -28,11 +28,7 @@ def create_full_pyramid(user_inputs: dict):
     number_of_lines: int = user_inputs["steps"]
     output = ""  # Initialised the output string as empty.
     for i in range(1, number_of_lines + 1):
-        output += " " * (number_of_lines - i)
-        output += (character + " ") * i
-        output = output[:len(output) - 1]  # To remove a " " at the end of the string. This is a requirement
-        # of the implemented logic.
-        output += " " * (number_of_lines - i) + "\n"
+        output += (" " * (number_of_lines - i)) + ((character + " ") * i) + "\n"
     output = output[:len(output) - 1]  # To remove the redundant new line character at the end of the string.
     return output
 
