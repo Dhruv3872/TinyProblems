@@ -29,7 +29,8 @@ def create_full_pyramid(user_inputs: dict):
     output = ""  # Initialised the output string as empty.
     for i in range(1, number_of_lines + 1):
         output += (" " * (number_of_lines - i)) + ((character + " ") * i) + "\n"
-    output = output[:len(output) - 1]  # To remove the redundant new line character at the end of the string.
+    output = output.rstrip()  # To remove the redundant new line character
+    # present at the end of the string.
     return output
 
 
