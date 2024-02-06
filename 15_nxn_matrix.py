@@ -1,4 +1,4 @@
-# Problem-14: Obtain n*n values from user, and print an nxn matrix on the console.
+# Problem-15: Obtain n*n values from user, and print an nxn matrix on the console.
 def create_nxn_matrix():
     # 1. Get the value of n from the user for an nxn matrix:
     n: int = 0  # Initialised the value of n as 0, which will be made invalid in the next line.
@@ -9,17 +9,11 @@ def create_nxn_matrix():
                 print("The entered value is not a positive integer.")
         except ValueError:
             print("The entered value is not a positive integer.")
-    print(n)
     # Initialize an empty list with name 'nxn' containing only one empty list to start with:
     nxn: list = [[]]
-    # Add n empty lists in the list nxn:
-    # for i in range(0, n):
-    #     nxn.append([])
-    # print(nxn)
     count: int = 0  # number of inputs received from the user so far.
     row: int = 0  # Initialized a variable to store the value of the current row in the iteration.
     # Iterate through the loop until n*n values are registered:
-    print(n * n)
     while row in range(0, n):
         print("Current row count: " + str(row + 1))
         try:
