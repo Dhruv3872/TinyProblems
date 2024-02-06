@@ -3,5 +3,5 @@ It's for the sake of practising Python programming.
 
 ### Changes made in this commit:
 
-- Added file `14_3x3_matrix.py`. It contains the following problem:
-   - Obtain 9 values from user, and print a 3x3 matrix on the console.
+- Added file `15_nxn_matrix.py`. It contains the following problem:
+   - Obtain n*n values from user, and print an nxn matrix on the console.
