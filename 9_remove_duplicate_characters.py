@@ -8,4 +8,5 @@ def remove_duplicates(input_string: str):
     return output_string
 
 
-print(remove_duplicates("undefeated"))
+given: str = input("Enter the string from which you want to remove duplicates: ")
+print(remove_duplicates(given))

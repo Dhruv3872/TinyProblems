@@ -11,4 +11,6 @@ def maximum_occurring_character(input_string: str):
     return most_repetitive_character
 
 
-print(maximum_occurring_character('fruitopia'))
+given: str = input("Enter the string for which you want to find the maximum occurring "
+                   "character: ")
+print(maximum_occurring_character(given))
