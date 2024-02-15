@@ -14,3 +14,6 @@ def maximum_occurring_character(input_string: str):
 given: str = input("Enter the string for which you want to find the maximum occurring "
                    "character: ")
 print(maximum_occurring_character(given))
+
+# Note: In case of two or more characters having the same maximum number of occurrences,
+# the function-the way it's been written-will return the first character  as its result.

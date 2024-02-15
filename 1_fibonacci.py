@@ -1,4 +1,3 @@
-import sys
 def get_fibonacci_series(input_value: str):
     fibonacci_series = [1]
     series_length: int = 0  # Initializing this variable with a value

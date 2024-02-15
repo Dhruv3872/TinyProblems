@@ -1,9 +1,8 @@
 # Problem-12: Write a program to Find prime and non-prime numbers in the array:
-import numpy as np  # For arrays
 import math  # For using sqrt & ceil.
 
 
-def find_prime_non_prime(input_array: np.ndarray):
+def find_prime_non_prime(input_array: list):
     # We are not checking for uniqueness of the array, but we will use sets to store prime
     # and non-prime numbers to avoid duplication in the output.
     output: dict[str, set] = {'prime': set(), 'non-prime': set()}
@@ -93,4 +92,4 @@ def check_prime(input_knowledge: dict):
     return output
 
 
-print(find_prime_non_prime(np.array([2, 1143, 53, 71, 85, 96, 23, 462, 78, 153])))
+print(find_prime_non_prime([2, 1143, 53, 71, 85, 96, 23, 462, 78, 153]))

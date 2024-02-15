@@ -19,14 +19,14 @@ def addition_of_two_matrices(l1: list, l2: list):
 # To be one, all of its rows must have the same number of elements.
 def is_eligible_matrix(given_list: list):
     if len(given_list) == 0:
-        print('ineligible')
+        # print('ineligible')
         return False
     elif len(given_list) == 1:
         if type(given_list[0]) is not list:
-            print('eligible')
+            # print('eligible')
             return True
         else:
-            print('ineligible')
+            # print('ineligible')
             return False
     else:
         rows: int = len(given_list)
@@ -53,10 +53,10 @@ def is_eligible_matrix(given_list: list):
             # Else, check if the length of the current row matches
             # the value of 'columns' variable :
             elif type(given_list[row]) is not list:
-                print('ineligible')
+                # print('ineligible')
                 return False  # Every row should be of the same length.
             elif len(given_list[row]) != columns:
-                print('ineligible')
+                # print('ineligible')
                 return False  # Every row should be of the same length.
         if is_row_singleton:
             # 'columns' variable will have the length of the list, and we need to reassign 'rows'
@@ -64,9 +64,9 @@ def is_eligible_matrix(given_list: list):
             rows = 1
             for column in range(0, columns):
                 if type(given_list[column]) is list:
-                    print('ineligible')
+                    # print('ineligible')
                     return False
-        print('eligible')
+        # print('eligible')
         return True
 
 
@@ -76,10 +76,10 @@ def is_eligible_matrix(given_list: list):
 def is_number_matrix(m: list):
     if len(m) == 1:
         if (type(m[0]) is int) or (type(m[0]) is float) or (type(m[0]) is complex):
-            print('number')
+            # print('number')
             return True
         else:
-            print('not number')
+            # print('not number')
             return False
     else:
         is_row_singleton: bool = False  # Initializing it with False.
@@ -97,7 +97,7 @@ def is_number_matrix(m: list):
             for column in range(0, len(m[row])):
                 if ((type(m[row][column]) is not int) and (type(m[row][column]) is not float)
                         and (type(m[row][column]) is not complex)):
-                    print('not number')
+                    # print('not number')
                     return False
         if is_row_singleton:
             # We need to evaluate the matrix for this special case as we broke out of the
@@ -105,9 +105,9 @@ def is_number_matrix(m: list):
             for column in range(len(m)):
                 if ((type(m[column]) is not int) and (type(m[column]) is not float)
                         and (type(m[column]) is not complex)):
-                    print('not number')
+                    # print('not number')
                     return False
-        print('number')
+        # print('number')
         return True
 
 
@@ -121,10 +121,10 @@ def are_compatible(m1: list, m2: list):
             result = False
     elif len(m1[0]) != len(m2[0]):
         result = False
-    if result:
-        print('compatible')
-    else:
-        print('incompatible')
+    # if result:
+    #     print('compatible')
+    # else:
+    #     print('incompatible')
     return result
 
 

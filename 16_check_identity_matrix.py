@@ -1,7 +1,8 @@
 # Problem-16: Check if the given nxn matrix is an identity matrix.
+from create_nxn_matrix import *
+
+
 def check_identity_matrix(matrix: list):
-    # Print matrix for easy validation of the result later on:
-    print(matrix)
     # Find out the length of the given matrix:
     given_length: int = len(matrix)
     # Create an identity matrix of the same length: m for matrix
@@ -47,27 +48,4 @@ def create_identity_matrix(length: int):  # l for length.
     return m
 
 
-test1: list = [1]  # Should return True
-test2: list = [4]  # Should return False
-test3: list = [[2, 3], [0, 1]]  # Should return False
-test4: list = [[1, 0], [0, 1]]  # Should return True
-test5: list = [[0, 0], [0, 1]]  # Should return False
-test6: list = [[1, 0, 0], [0, -1, 0], [0, 0, 1]]  # Should return False
-test7: list = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]  # Should return True
-check_identity_matrix(test1)
-check_identity_matrix(test2)
-check_identity_matrix(test3)
-check_identity_matrix(test4)
-check_identity_matrix(test5)
-check_identity_matrix(test6)
-check_identity_matrix(test7)
-
-# def create_matrix_from_input():
-#     rows: int = int(input("Enter the number of rows present in your matrix: "))
-#     columns: int = int(input("Enter the number of columns present in your matrix: "))
-#     matrix: list = []
-#     for i in range(0, rows):
-#         for j in range(0, columns):
-#
-#
-# create_matrix_from_input()
+check_identity_matrix(create_nxn_matrix())

@@ -13,11 +13,15 @@ def create_nxn_matrix():
     nxn: list = [[]]
     count: int = 0  # number of inputs received from the user so far.
     row: int = 0  # Initialized a variable to store the value of the current row in the iteration.
+    column: int = 0  # Initialized a variable to store the value of the current column
+    # in the iteration.
     # Iterate through the loop until n*n values are registered:
     while row in range(0, n):
-        print("Current row count: " + str(row + 1))
         try:
-            current_input: int = int(input("Please enter the next integer value for an nxn matrix: "))
+            current_input: int = int(input("Please enter an integer value for the "
+                                           "position at row " + str(row + 1) + " column "
+                                           + str(column + 1) + " of the " + str(n) + "x" + str(n)
+                                           + " matrix: "))
             # If the current row needs element(s):
             if len(nxn[row]) < n:
                 # Add current_input at the end of the current row:
@@ -34,13 +38,10 @@ def create_nxn_matrix():
                     else:
                         # Break out of the loop:
                         break
-            print("Total values registered so far: " + str(count))
-            print("Values registered for the current row so far: " + str(count - (row * n)))
-            print("Values remaining in the current row: " + str(((row + 1) * n) - count))
+            column = count - (row * n)
         except ValueError:
             print("The entered value is invalid.")
-    print("The desired nxn matrix:")
+    print("The desired " + str(n) + "x" + str(n) + " matrix:")
     print(nxn)
+    return nxn
 
-
-create_nxn_matrix()
